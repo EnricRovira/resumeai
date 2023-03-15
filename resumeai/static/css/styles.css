@@ -1,0 +1,79 @@
+/* static/css/styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+body.light {
+    background-color: var(--bs-light);
+    color: var(--bs-dark);
+}
+
+body.dark {
+background-color: var(--bs-dark);
+color: var(--bs-light);
+}
+
+body.dark .card-header {
+background-color: var(--bs-gray);
+color: var(--bs-dark);
+}
+
+body.light .card-header {
+background-color: var(--bs-light);
+color: var(--bs-dark);
+}
+
+.container {
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #666;
+}
+
+h2 { 
+    margin-top: 100px; 
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
