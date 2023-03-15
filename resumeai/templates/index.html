@@ -11,7 +11,9 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-8 text-center">
-          <h1>ResumAi - Resumen automático de páginas web</h1>
+          <h1 class="my-5">ResumeAi</h1>
+          <h2 class="mb-4">Resumen automático de páginas web</h2>
+          <div class="subtext-box p-3 mb-4">Introduce la URL de una página web y ResumeAi te genera un resumen al instante!!</div>
           <form action="/resumen" method="POST" class="mt-4">
             <div class="form-group">
               <label for="url">Ingresa la URL de la página web:</label>
@@ -23,11 +25,14 @@
             <p style="color: red;" class="mt-2">{{ error }}</p>
           {% endif %}
           {% if resumen_generado %}
-            <h2 class="mt-4">Resumen:</h2>
-            <p>{{ resumen }}</p>
+            <h2 class="resumen-title mt-4">Resumen:</h2>
+            <div class="resumen-box p-3 mt-2">{{ resumen }}</div>
           {% endif %}
         </div>
       </div>
     </div>
+    <footer>
+      Hecho con <span class="emoji">&#x2764;&#xFE0F;</span> por <a href="https://twitter.com/EnricRM12" target="_blank">@EnricRM12</a> y mi inestimable asistente <a href="https://openai.com/" target="_blank">ChatGPT-4</a> <span class="emoji">&#x1F916;</span>
+    </footer>
   </body>
 </html>
