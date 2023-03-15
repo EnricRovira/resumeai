@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ResumAi - Resumen automático de páginas web</title>
+  </head>
+  <body>
+    <h1>ResumAi - Resumen automático de páginas web</h1>
+    <form action="/resumen" method="post">
+      <label for="url">Ingresa la URL de la página web:</label><br>
+      <input type="text" id="url" name="url" value=""><br>
+      <input type="submit" value="Resumir">
+    </form>
+    {% if resumen %}
+      <h2>Resumen:</h2>
+      <p>{{ resumen }}</p>
+    {% endif %}
+  </body>
+</html>
